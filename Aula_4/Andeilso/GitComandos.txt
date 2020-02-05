@@ -1,0 +1,3 @@
+git log --oneline: Retorna meus commits menos detalhados apenas em uma linha
+
+git branch: Mostra todos as branchs criadas
