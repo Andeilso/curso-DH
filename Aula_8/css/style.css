@@ -1,11 +1,13 @@
 body{
     margin: 0;
 }
+
 ul{
     list-style-type: none;
     float: right;
     margin-top: 15px;
 }
+
 a{
     text-decoration: none;
 }
@@ -13,6 +15,7 @@ a{
 #header img, #header h1, #header ul, #header ul a li{
     display: inline-block;
 }
+
 li{
     width: 150px;
     text-align: center;
@@ -20,7 +23,7 @@ li{
 }
 
 #header{
-    border-bottom: 2px solid black
+    border-bottom: 2px solid black;
 }
 
 #banner{
@@ -31,7 +34,77 @@ li{
     background-position: center;
     height: 500px;
     color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 #banner p{
     padding-top: 320;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2{
+    margin-top: 3;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+#banner button{
+    margin-top: 15;
+    height: 30;
+    width: 100;
+}
+
+#banner button:hover, #containersImg button:hover{
+    background-color: red;
+    border-color: red;
+    color:white;
+}
+
+#containersImg{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#containersImg .caixa{
+    height: 250px;
+    width: 375px;
+    margin: 10 37;
+}
+
+#containersImg #imagem1{
+    text-align: center;
+    background-image: url('../midias/img/product-1.jpg');
+    background-size: cover;
+}
+
+#containersImg #imagem2{
+    text-align: center;
+    background-image: url('../midias/img/product-2.jpg');
+    background-size: cover;
+}
+
+#containersImg #imagem3{
+    text-align: center;
+    background-image: url('../midias/img/product-3.jpg');
+    background-size: cover;
+}
+
+#containersImg #imagem4{
+    text-align: center;
+    background-image: url('../midias/img/product-4.jpg');
+    background-size: cover;
+}
+
+#containersImg #imagem5{
+    text-align: center;
+    background-image: url('../midias/img/product-5.jpg');
+    background-size: cover;
+}
+
+#containersImg #imagem6{
+    text-align: center;
+    background-image: url('../midias/img/product-6.jpg');
+    background-size: cover;
 }
