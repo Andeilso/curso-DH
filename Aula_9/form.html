@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <form method="POST">
+            <div>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                <!-- disabled="disabled" , value = "Janaina"-->
+            </div>
+            <div>
+                <label for="senha">Senha: </label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+            </div>
+            <div>
+                <input type="checkbox" name="aceito" id="aceito">
+                <label for="aceito">Li e aceito os <a href="#"> termos de uso </a></label>
+            </div>
+            <div>
+                <label for="masculino">Masculino: </label>
+                <input type="radio" name="genero" value="M" id="masculino">
+                <label>Feminino: 
+                    <input type="radio" name="genero" if="feminino"value="F">
+                </label>
+            </div>
+            <div>
+                <label>Mensagem</label><br>
+                <textarea name="Mensagem" id="Mensagem" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label>País:</label>
+                <select name="pais" id="pais">
+                    <optgroup label="America Latina">
+                        <option value="br">Brasil</option>
+                        <option value="ar">Argentina</option>
+                    </optgroup>
+                    <optgroup label="Europa">
+                        <option value="es">Espanha</option>
+                        <option value="pt">Portugal</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="hobbies">Hobbies</label>
+                <select name="hobbies" id="hobbies" multiple>
+                    <option value="danca">Dança</option>
+                    <option value="jazz">Jazz</option>
+                    <option value="musica">Musica</option>
+                    <option value="gamer">Gamer</option>
+                    <option value="programador">Programador</option>
+                    <option value="dublador">Dublador</option>
+                </select>
+            </div>
+            <div>
+                <label for="foto">Foto</label>
+                <input type="file" name="foto" id="foto" accept=".jpg, .png, .jpeg">
+            </div>
+            <!-- um input do tipo submit em formulario tambem é enviado como parte do formulario para o servidor, mas só quando passamos name como atributo. -->
+            <input type="submit" value="Enviar" name="Enviar">
+            <button type="submit">Enviar</button>
+        </form>    
+    </body>
+</html>

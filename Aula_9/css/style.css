@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(149, 151, 151);
+    font-family: sans-serif;
+}
+.pai-relative {
+margin: 20px;
+border: 1px solid black;
+}
+.pai{
+    margin: 20px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.pai div{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 1px dashed black;
+}
+
+.relative div:last-child{
+    position: relative;
+    left: 10px;
+    top:  10px;
+}
+
+.absolute div:nth-child(2){
+    background-color: aqua;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.fixed div:first-child{
+    background-color: red;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
